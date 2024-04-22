@@ -4,7 +4,7 @@ function twoNumberSum(array, targetSum) {
 
   for(let i = 0; i < array.length; i++){
     const potential = targetSum - array[i]
-    if(array.includes(potential) && potential !== array[i]){
+    if(array.includes(potential) && !result.includes(array[i])){
       result.push(array[i], potential)
     }
   }
